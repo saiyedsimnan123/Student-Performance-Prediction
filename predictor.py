@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 
 BASE_DIR = Path(__file__).resolve().parent
-reg = joblib.load(BASE_DIR / "models" / "regressor.joblib")
-clf = joblib.load(BASE_DIR / "models" / "classifier.joblib")
+reg = joblib.load(BASE_DIR / "regressor.joblib")
+clf = joblib.load(BASE_DIR / "classifier.joblib")
 
 
 def grade_band(score: float) -> str:
