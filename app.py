@@ -6,8 +6,8 @@ import streamlit as st
 from predictor import predict
 
 BASE_DIR = Path(__file__).resolve().parent
-DATA_PATH = BASE_DIR / "data" / "students.csv"
-RESULTS_PATH = BASE_DIR / "models" / "results.json"
+DATA_PATH = BASE_DIR / "students.csv"
+RESULTS_PATH = BASE_DIR / "results.json"
 
 st.set_page_config(page_title="Student Performance AI", page_icon="🎓", layout="wide")
 
